@@ -1,0 +1,108 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+main div#jogador {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    background-color: #0a0a0e;
+    align-items: center;
+    justify-content: center;
+    padding: max(10px,1.5vw) max(20px,3vw);
+}
+#img-jogador {
+    flex: 35%;
+    display: flex;
+    padding: 2vw;
+}
+#img-jogador img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: solid #000000 5px;
+}
+.PC {
+    display: block;
+}
+.MB {
+    display: none;
+}
+
+#texto-jogador {
+    flex: 70%;
+}
+#texto-jogador h2,#titulo_miniaturas {
+    text-align: center;
+    color: #eeeeee;
+    font-family: 'Caesar Dressing', cursiva;
+    font-size: 55px;
+    
+}
+#texto-jogador p {
+    text-align: justify;
+    color: #eeeeee;
+    font-family: 'Inter', sem serifa;
+    font-size: max(18px,2vw);
+    padding: 1vw 3vw;
+}
+
+
+
+
+@media only screen and (max-width: 800px){ 
+    main div#jogador {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    #texto-jogador p {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #texto-jogador h2,#titulo_miniaturas {
+        font-size: 45px;    
+    }
+
+    .texto h2,#titulo_miniaturas {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Caesar Dressing', cursiva;
+        margin: 5px;
+    }
+
+    #miniaturas img{
+        width: max(90px,15vw);
+        height: auto;
+    }
+
+    #img-jogador {
+        margin-top: 10px;
+    }
+    .PC {
+        display: none;
+    }
+    .MB {
+        display: block;
+    }
+}
+@media only screen and (max-width: 550px){
+    #Calango-MB {
+        width: 90%;
+    }
+    #miniaturas img{
+        width: max(70px,20vw);
+        height: auto;
+    }
+}

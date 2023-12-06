@@ -1,0 +1,276 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background: #36474f;
+}
+/* configurando os divs e a beleza */
+header
+{
+position: absolute;
+width: 100%;
+height: 100px;
+min-height: 66px;
+background-color: rgb(0, 0, 0);
+padding: 0 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo {
+   align-items: start;
+    
+}
+.logo img {
+    height: 100px;
+
+}
+header ul {
+    position: relative;
+}
+header ul li {  
+    position: relative;
+    list-style: none;
+    float: left;
+}
+ /* mechendo diretamente nas letras */
+header ul li a{  
+    color: #eeeeee ;
+    font-size: 25px;
+    padding: 1.5vw 2vw;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s ease-out;
+}
+header ul li a:hover{  
+    background-color: #000;
+}
+header ul li ul{ 
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    background: #1b1b1b;
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    display: none;
+    border: 1px solid #a0a0a0;
+}
+header ul li:hover ul{ 
+    display: block;
+}
+
+header ul li ul li {
+    position: relative;
+    width: 100%;
+    background-color:#101010;
+}
+header ul li ul li a {
+    padding: 10px 5px;
+    font-size: 25px;
+} 
+header ul li ul li a:hover{  
+    background-color: #000;
+    position: 0px;
+}
+#Lingua{
+    display: flex;
+    flex: 5%;
+    flex-direction: row;
+}
+@media (max-width: 900px){
+
+    header ul li ul li {
+        background-color: #303030; 
+    }
+    header ul li ul li a {
+        padding: 5px 25px;
+        font-size: 20px;
+    } 
+header{
+    padding: 5px 10px;
+    z-index: 100;
+}
+header ul li ul{ 
+    border: 0px solid #a0a0a0;
+}
+header nav{
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    min-height: 400px;
+    top: 100px;
+    right: 0;
+    background-color: #151515;
+    display: none;
+    border: 2px solid #a0a0a0;
+    border-top: 0px solid #a0a0a0;
+    border-right: 0px solid #a0a0a0;
+}
+header nav ul li{
+    width: 100%;
+}
+header nav ul li ul{ 
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+.menuToggle
+{
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuToggle::before
+{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+    transform: translateY(-12px);
+    box-shadow: 0 12px #fff;
+}
+
+.menuToggle::after
+{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+    transform: translateY(12px);
+}
+
+header.active .menuToggle::before{
+    transform: rotate(45deg);
+    box-shadow: 0 0 #fff;
+}
+header.active .menuToggle::after{
+    transform: rotate(315deg);
+}
+header.active nav{
+    display: block;
+}
+
+}
+@media (max-width: 500px){
+header nav{
+    position: absolute;
+    width: 60%;
+    top: 100px;
+    right: 0;
+    background-color: #101010;
+    display: none;
+    z-index: 100;
+}
+header nav{
+    min-height: 300px;
+ }
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+}
+footer p {
+    flex: 80%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: max(25px,1.8vw);
+}
+
+footer #F_logo{
+        display: flex;
+        align-items: center;
+        flex: 40%;
+}
+
+footer p {
+    text-decoration: none;
+    /* tirar toda a decoracao dos itens ou seja, tira a linha em baixo do item*/
+    color: #eeeeee;
+    /* cor da letra */
+    font-size: max(25px,1.8vw);
+    font-family: Inter;
+}
+
+footer div#F_logo img {
+    height: 100px;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 800px)
+{ 
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+        footer p {
+            flex: 80%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            font-size: max(8px,2.5vw);
+        }
+}
+
+main {
+    padding-top: 100px;
+}
+
+#ingles{
+width: 100%;
+display: flex;
+flex-direction: row;
+color: #eeeeee;
+background-color: rgb(11, 11, 11);
+height: 25px;
+font-family: inter;
+align-items: center;
+}
+#ingles div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    }
+#ingles div{
+    flex: 80%;
+    display: flex;
+    text-decoration: none;
+    color: #eeeeee;
+    }
+
+#ingles a{
+    color: #eeeeee;
+}
+#ingles a:hover{
+    color: rgba(43, 0, 255);
+    }
+
+#ingles p{
+        padding-inline:20px; 
+    }

@@ -1,0 +1,111 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #171922;
+}
+
+section#resumo_todo {
+    background-image: url(../imagens/Elementos_Itens/elementos_Fundo/Fundo_Medo_PC_opa_40.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+section.section_resumo {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+section#Resumo_elemento {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem_elemento_resumo {
+    flex: 30%;
+    display: flex;
+    padding: 2vw;
+}
+.imagem_elemento_resumo img {
+    height: 100%;
+    width: 100%;
+}
+.texto_elemento_resumo {
+    flex: 70%;
+}
+.texto_elemento_resumo h2, #titulo_miniaturas{
+    text-align: center;
+    color: #eeeeee;
+    font-family: 'Caesar Dressing', cursiva;
+    font-size: 60px;
+    
+}
+.texto_elemento_resumo p {
+    text-align: justify;
+    color: #eeeeee;
+    font-family: 'Inter', sem serifa;
+    font-size: max(18px,1.7vw);
+    padding: 1vw 3vw;
+}
+.texto_elemento_resumo p#resumo_texto_medo{
+    width: 70%;
+}
+
+img#portador_resumo {
+    border: 1px solid #8F00FF;
+}
+@media only screen and (max-width: 800px){ 
+    section.section_resumo {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    #Reliquia_elemento {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .texto_elemento_resumo p {
+        text-align: justify;
+        color: #eeeeee;
+        font-family: 'Inter', sem serifa;
+        font-size: max(18px,1.7vw);
+        padding: 1vw 3vw;
+    }
+    .texto_elemento_resumo p {
+        font-size: max(18px,3.5vw);
+        padding: 5px;
+    }
+    #imagem_elemento_resumo {
+        margin-top: 10px;
+    }
+    .texto_elemento_resumo p#resumo_texto_medo{
+        width: 85%;
+    }
+    
+}
+@media only screen and (max-width: 500px){ 
+
+    .texto_elemento_resumo p {
+            font-size: min(4vw,18px);
+            padding: 5px;
+
+    }
+    .texto_elemento_resumo h2, #titulo_miniaturas{
+        text-align: center;
+        color: #eeeeee;
+        font-family: 'Caesar Dressing', cursiva;
+        font-size: 40px;
+    }
+    .texto_elemento_resumo p#resumo_texto_medo{
+        width: 100%;
+    }
+    
+ }

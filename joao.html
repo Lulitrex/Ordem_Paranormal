@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/selection.css" rel="stylesheet">
+    <link href="css/joao.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Inter:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Ordem Paranormal João</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="Imagens/logo-ordem-paranormal.webp" alt="logo de ordem paranormal">
+        </a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Elementos</a>
+                    <ul>
+                        <li><a href="sangue.html">Sangue</a></li>
+                        <li><a href="Medo.html">Medo</a></li>
+                        <li><a href="energia.html">Energia</a></li>
+                        <li><a href="Conhecimento.html">Conhecimento</a></li>
+                        <li><a href="morte.html">Morte</a></li>
+                    </ul>
+                </li>
+                <li><a>Temporadas</a>
+                    <ul>
+                        <li><a href="OrdemParanormal.html">Ordem Paranormal</a></li>
+                        <li><a href="SecredoFloresta.html">Secredo na floresta</a></li>
+                        <li><a href="Desconjuracao.html">Desconjuração</a></li>
+                        <li><a href="Calamidade.html">Calamidade</a></li>
+                        <li><a href="SecredoIlha.html">Secredo na ilha</a></li>
+                        <li><a href="Sinais.html">Sinais do outro lado</a></li>
+                    </ul>
+                </li>
+
+                <li><a>Jogadores</a>
+                    <ul>
+                        <li><a href="Calango.html">Calango</a></li>
+                        <li><a href="Rakin.html">Rakin</a></li>
+                        <li><a href="Gabi.html">Gabi</a></li>
+                        <li><a href="joao.html">João</a></li>
+                        <li><a href="Guaxinim.html">Guaxinim</a></li>
+                        <li><a href="Felps.html">Felps</a></li>
+                        <li><a href="Triz.html">Triz</a></li>
+                        <li><a href="Luiz.html">Luiz</a></li>
+                        <li><a href="Luba.html">Luba</a></li>
+                    </ul>
+                </li>
+                <li id="Lingua"><a href="joao.html"><img src="imagens/brazil.png" alt="Brasil"></a><a
+                        href="joao_ing.html"><img src="imagens/usa.png" alt="USA"></a>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="jogador">
+            <div id="img-jogador">
+                <img id="Calango-PC" src="Imagens/Jogadores/Joao.webp" alt="João" class="PC">
+                <img id="Calango-MB" src="Imagens/Jogadores/Joao-450.webp" alt="João" class="MB">
+            </div>
+            <div id="texto-jogador">
+                <h2>João</h2>
+                <p> João Miranda, mais conhecido como Jão, é um streamer e criador de conteúdo, conhecido no Instagram,
+                    na Twitch e também no Twitter. João, além de atuar como assistente de produção a partir de Ordem
+                    Paranormal: Desconjuração, é o
+                    intérprete de Gal, um dos antagonistas do universo.</p>
+            </div>
+        </div>
+        <section id="Personagens">
+            <h2 id="titulo_miniaturas">Personagem</h2>
+            <div class="microsoft">
+                <div id="js_texto" class="texto">
+                    <h1>Gal</h1>
+                    <p> Gal é um homem pálido com longos cabelos escuros que chegam até seu peito e uma venda com um
+                        pingente preso a ela que cobre seus olhos. Ele é um dos principais antagonistas de Ordem
+                        Paranormal: Desconjuração, o líder dos Escriptas e uma figura até então misteriosa, visto que
+                        pouco se sabe sobre o ocultista. Seus feitos mais marcantes foram o assassinato de Elizabeth
+                        Webber, utilizando a espada de Joui Jouki, e a batalha no Orfanato Santa Menefreda contra os
+                        agentes da Ordo Realitas, onde se aliou a Kian, até então adormecido no corpo de Luciano
+                        Carvalho, após o trazer de volta em todo o seu poder.</p>
+                </div>
+                <div class="imagem">
+                    <img id="ampliadao" src="imagens/Personagens_e_Criaturas/img-joao-p/Personagem_Joao_Gal.webp"
+                        alt="imagem do Gal">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="F_logo">
+                <img src="Imagens/logo-ordem-paranormal.webp" alt="logo-ordem-paranormal.webp">
+            </div>
+            <p>© Todos os Direitos Reservados ® 2023 Ordem Paranormal & Lucas Garcia</p>
+        </footer>
+    </main>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
